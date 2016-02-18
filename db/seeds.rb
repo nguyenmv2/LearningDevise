@@ -10,3 +10,12 @@ user = User.create! :name => 'Apple', :email => 'apple@fruits.com', :password =>
 puts 'New fruit is in the basket' << user.name
 user2 = User.create! :name => 'Banana', :email => 'banana@fruits.com', :password => 'Yellowandcurvy', :password_confirmation => 'Yellowandcurvy'
 puts 'New fruit is in the basket' << user2.name
+
+
+puts 'Now adding the seeds for the menus'
+menuItem1 = MenuItem.create! :name => 'Fried Egg', :price => 12.30, :description => 'Egg = Fried'
+menuItem2 = MenuItem.create! :name => 'Boiled Egg', :price => 8.30, :description => 'Egg = Boiled'
+
+puts 'Now adding seeds for cutomization '
+modifier1 = Modifier.create! :name => 'Add Green Onion', :deltaPrice => 2.30
+modifier2 = Modifier.create! :name => 'No Onion', :deltaPrice => -0.30
