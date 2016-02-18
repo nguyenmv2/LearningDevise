@@ -28,7 +28,6 @@ group :development do
   gem 'devise'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'strong_parameters'
   gem "therubyracer"
   gem 'mongoid'
 

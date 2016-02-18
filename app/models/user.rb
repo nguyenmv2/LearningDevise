@@ -37,7 +37,7 @@ class User
   ##Add name for the user
   field :name
   validates_presence_of :name
-  validate validates_uniqueness_of :name, :email, :case_sensitive => false
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+  validates_uniqueness_of :name, :email, :case_sensitive => false
+  # attr_accessible :name, :email, :password, :password_confirmation, :remember_me
 
 end

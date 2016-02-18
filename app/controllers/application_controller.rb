@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   ##Add these lines as replacement for attr_accessible
   before_filter :configure_sanitized_params, if: :devise_controller?
-  def configure_santized_params
+  def configure_sanitized_params
     devise_parameter_sanitizer.for(:sign_up) {
         |u| u.permit(:name, :email, :password, :password_confirmation, :remember_me)
     }
